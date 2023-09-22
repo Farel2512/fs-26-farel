@@ -1,0 +1,460 @@
+/* Reset CSS untuk menghilangkan margin dan padding default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo .skill {
+  color: #0460d9;
+}
+
+.logo .mastery {
+  color: #000000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links li {
+  margin-right: 50px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Hover effect on links */
+.nav-links a:hover {
+  border-bottom: 2px solid #0460d9;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  background-color: #0460d9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #ffffff;
+  color: #0460d9;
+}
+
+.register-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Membuat latar belakang tetap saat menggulir halaman */
+  /* font-family: Arial, sans-serif; */
+  background-color: #8dc3f2;
+  color: #fff;
+}
+
+.header {
+  background: url(https://i.postimg.cc/qMsY9dtR/boy-using-laptop-sitting-with-multiethnic-classmates-modern-classroom.jpg);
+  /* max-width: 1500px; */
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.7); Warna latar belakang dengan transparansi */
+  /* background: linear-gradient(45deg, #0460d9, #000000); */
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  font-size: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100vh;
+  max-width: 1240px;
+}
+
+.header .title-logo .skill {
+  background-color: transparent;
+  color: #0460d9;
+  border-radius: 10px 0 0 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header .title-logo .mastery {
+  background-color: transparent;
+  color: #000000;
+  border-radius: 0 10px 10px 0;
+  text-shadow: 2px 2px 4px rgb(4, 96, 217);
+}
+
+.header > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+}
+
+.header > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 80px 0px;
+}
+
+#search-input {
+  flex-grow: 1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 20px;
+}
+
+#search-button {
+  background-color: #0460d9;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0242a5;
+}
+
+.header .buttons-mulai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 490px;
+}
+
+.line {
+  background-color: #8dc3f2;
+  padding-top: 60px;
+}
+
+.topic-container .topic-title {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  font-size: 35px;
+  background-color: #ffffff;
+  color: #8dc3f2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.topic {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.topic-item {
+  text-align: center;
+  color: #ffffff;
+  background-color: #8dc3f2;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.topic-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.topic-item h2 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.kelas-container .kelas-title {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 60px;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.kelas {
+  background-color: #8dc3f2;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.kelas-item {
+  text-align: center;
+  color: #8dc3f2;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.kelas-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.kelas-item p {
+  padding: 10px;
+}
+
+.kelas button:hover {
+  background-color: #ffffff;
+  color: #8dc3f2;
+  transition: background-color 0.3s ease;
+}
+
+.kelas-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 100px;
+}
+
+.kelas-button button {
+  background-color: #ffffff;
+  color: #8dc3f2;
+}
+
+.kelas-button button:hover {
+  background-color: #8dc3f2;
+  color: #ffffff;
+}
+
+.call-to-action {
+  padding: 50px 0px;
+  background-color: #ffffff;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.call-to-action h2 {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0;
+  color: #333;
+}
+
+.call-to-action p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  font-size: 18px;
+}
+
+.call-to-action img {
+  width: 500px;
+  max-width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 40px;
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: #8dc3f2;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.cta-button a button {
+  font-size: 20px;
+}
+
+.cta-button button:hover {
+  background-color: #ffffff;
+  color: #8dc3f2;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  background-color: #0460d9;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-container {
+  width: 350px;
+  margin: 40px auto;
+  padding: 50px;
+  border: 0px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #0460d9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'] {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type='checkbox'] {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #8dc3f2;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0245a3;
+}
+
+#warning {
+  color: red;
+  margin-top: 10px;
+}
+
+.footer-logo {
+  font-size: 40px;
+}
+
+.footer-logo .skill {
+  color: #0460d9;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer-logo .mastery {
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 4px rgb(4, 96, 217);
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #0460d9;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+footer a:hover {
+  color: red;
+  text-shadow: 1px 1px 2px #000000;
+}
